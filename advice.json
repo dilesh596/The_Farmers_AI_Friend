@@ -1,0 +1,894 @@
+{
+  "meta": {
+    "region": "Vidarbha, Maharashtra",
+    "purpose": "Local dataset for an offline crop/garden advisor. Only values read from the listed sources are filled in. Missing values are null. Nothing is guessed.",
+    "main_source": "ICAR-CRIDA District Agriculture Contingency Plans (one PDF per district, prepared with Dr. PDKV Akola)",
+    "data_vintage_warning": "Area, production and rainfall figures in these plans are historical (mostly 2004-2009-era statistics). Treat as a starting point, not current agronomy advice.",
+    "districts_total": 11,
+    "districts_with_full_profile": 11,
+    "districts_with_partial_profile": 0,
+    "districts_not_collected": 0,
+    "area_unit": "'000 hectares unless stated",
+    "regional_zones_note": {
+      "text": "PDKV describes Vidarbha as eleven districts in rainfall zones. Assured rainfall kharif zone: Buldana, Akola, Washim, Amravati (excluding Warud and Dhamangaon tahsils) and part of Yavatmal (Pusad and Darwha tahsils); cotton and kharif sorghum dominate. High rainfall zone: Bhandara, Gondia, Chandrapur (excluding Rajura and Warora tahsils), Gadchiroli and part of Nagpur (Bhiwapur and part of Umred tahsils); predominantly paddy in kharif.",
+      "source_url": "https://www.pdkv.ac.in/?p=17913"
+    }
+  },
+  "districts": [
+    {
+      "district": "Washim",
+      "division": "Amravati",
+      "status": "full_profile",
+      "source_url": "https://icar-crida.res.in/CP/Maharastra/PDKV,%20Akola/Washim.pdf",
+      "agro_climatic_zone_narp": "Central Vidarbha Zone (MH-8)",
+      "soils": {
+        "deep_black_pct": 46.54,
+        "medium_deep_black_pct": 9.91,
+        "shallow_black_pct": 43.55
+      },
+      "rainfall_normal": {
+        "sw_monsoon_jun_sep_mm": 848.6,
+        "sw_monsoon_rainy_days": 41.3,
+        "ne_monsoon_oct_dec_mm": 75.4,
+        "winter_jan_feb_mm": 26.7,
+        "summer_mar_may_mm": 14.6,
+        "annual_mm": 965.3,
+        "annual_rainy_days": 48.6,
+        "normal_onset": "2nd week of June",
+        "normal_cessation": "1st week of October"
+      },
+      "area_by_crop_2008_09": {
+        "kharif": {
+          "soybean": 185.1,
+          "cotton": 67.8,
+          "other_pulses": 88.4,
+          "pigeonpea": 47.4,
+          "sorghum": 29.9
+        },
+        "rabi": {
+          "gram": 55.7,
+          "wheat": 3.0,
+          "safflower": 2.3
+        },
+        "summer": null
+      },
+      "sowing_windows": {
+        "kharif_rainfed": {
+          "cotton": "20 June - 15 July",
+          "soybean": "20 June - 15 July",
+          "greengram_blackgram": "last week of June",
+          "pigeonpea": "1st week of July",
+          "jowar": "20 June - 10 July"
+        },
+        "rabi_rainfed": {
+          "gram": "2nd week of October",
+          "safflower": "3rd week of September - 1st week of October"
+        },
+        "rabi_irrigated": {
+          "wheat": "1st week of November - 15 December"
+        }
+      },
+      "horticulture": {
+        "fruits_total_area": 14.6,
+        "mango_area": 3.6,
+        "vegetables_total_area": 1.1,
+        "major_horticultural_crops_listed": [
+          "orange",
+          "lemon",
+          "papaya",
+          "onion",
+          "brinjal"
+        ]
+      },
+      "weather_related_pests_listed": "Cotton: jassids; Soybean: Spodoptera; Chickpea: blight and wilt; Sorghum: grain molds",
+      "notes": "Net irrigated area is only 5.5 thousand ha out of 386 thousand ha net sown, so the district is mostly rainfed."
+    },
+    {
+      "district": "Bhandara",
+      "division": "Nagpur",
+      "status": "full_profile",
+      "source_url": "https://icar-crida.res.in/CP/Maharastra/PDKV,%20Akola/Bhandara.pdf",
+      "agro_climatic_zone_narp": "Eastern Vidarbha Zone, High rainfall zone (MH-9)",
+      "soils": {
+        "type_note": "Mixed red and black soils",
+        "deep_pct_of_geographical_area": 78.9,
+        "shallow_pct_of_geographical_area": 13.0,
+        "medium_deep_pct_of_geographical_area": 8.0
+      },
+      "rainfall_normal": {
+        "sw_monsoon_jun_sep_mm": 1211.6,
+        "sw_monsoon_rainy_days": 50.5,
+        "ne_monsoon_oct_dec_mm": 80.7,
+        "winter_jan_mar_mm": 48.9,
+        "summer_apr_may_mm": 20.1,
+        "annual_mm": 1361.3,
+        "annual_rainy_days": 59.6,
+        "normal_onset": "24th meteorological week (June 11-17)",
+        "normal_cessation": "40th meteorological week (Oct 1-7)"
+      },
+      "area_by_crop_2008_09": {
+        "kharif": {
+          "paddy": 190.9,
+          "soybean": 9.2,
+          "pigeonpea": 4.2
+        },
+        "rabi": {
+          "wheat": 3.7,
+          "gram": 2.6
+        },
+        "summer": {
+          "groundnut": 0.1
+        },
+        "season_not_stated": {
+          "sesame": 1.0
+        }
+      },
+      "sowing_windows": {
+        "kharif_rainfed": {
+          "paddy_nursery": "15 June - 10 July",
+          "soybean": "15 June - 15 July",
+          "pigeonpea": "15 June - 7 July"
+        },
+        "kharif_irrigated": {
+          "paddy_nursery": "10 June - 20 June"
+        },
+        "rabi_rainfed": {
+          "linseed": "1 - 15 October",
+          "gram": "1 - 15 October"
+        },
+        "rabi_irrigated": {
+          "linseed": "15 October - 15 November",
+          "gram": "15 October - 25 October"
+        }
+      },
+      "horticulture": {
+        "fruits_total_area": 4.46,
+        "mango_area": 3.9,
+        "vegetables_total_area": 4.9,
+        "vegetables_listed_area": {
+          "brinjal": 1.2,
+          "tomato": 0.6,
+          "chilli": 0.7,
+          "ladyfinger": 0.5,
+          "leafy_vegetables": 0.5
+        }
+      },
+      "contingency_proneness_listed": "Drought: occasional; Flood: occasional; Heat wave: occasional; Pests and disease outbreak: regular",
+      "notes": "Net irrigated area 107 thousand ha (about 65% from canals), so much of the paddy is irrigated."
+    },
+    {
+      "district": "Yavatmal",
+      "division": "Amravati",
+      "status": "full_profile",
+      "source_url": "https://icar-crida.res.in/CP/Maharastra/PDKV,%20Akola/Yavatmal.pdf",
+      "agro_climatic_zone_narp": "Central Vidarbha zone (MH-8)",
+      "soils": {
+        "deep_black_pct": 34.7,
+        "medium_deep_black_pct": 13.0,
+        "shallow_black_pct": 52.2
+      },
+      "rainfall_normal": {
+        "sw_monsoon_jun_sep_mm": 775.2,
+        "sw_monsoon_rainy_days": 39.9,
+        "ne_monsoon_oct_dec_mm": 69.6,
+        "winter_jan_mar_mm": 29.4,
+        "summer_apr_may_mm": 12.2,
+        "annual_mm": 886.4,
+        "annual_rainy_days": 47.3,
+        "normal_onset": "24th meteorological week (June 11-17)",
+        "normal_cessation": "40th MW (01-07 Oct)"
+      },
+      "area_by_crop_2008_09": {
+        "kharif": {
+          "cotton": 405.0,
+          "soybean": 287.0,
+          "pigeonpea": 106.0,
+          "sorghum": 70.0,
+          "greengram": 12.0,
+          "blackgram": 10.0
+        },
+        "rabi": {
+          "gram": 33.4,
+          "wheat": 38.0
+        },
+        "summer": null,
+        "source_note": "The PDF labels these as area under major field crops in 2008-09."
+      },
+      "sowing_windows": {
+        "kharif_rainfed": {
+          "cotton": "20 June - 15 July",
+          "soybean": "20 June - 15 July",
+          "pigeonpea": "1st week of July",
+          "sorghum": "20 June - 10 July",
+          "greengram_blackgram": "last week of June"
+        },
+        "kharif_irrigated": {},
+        "rabi_rainfed": {},
+        "rabi_irrigated": {}
+      },
+      "horticulture": {
+        "fruits_total_area": 26.3,
+        "mango_area": 1.3,
+        "vegetables_total_area": 3.9,
+        "major_horticultural_crops_listed": [
+          "orange",
+          "mango",
+          "sapota",
+          "mosambi",
+          "guava",
+          "aonla",
+          "kagzi lime",
+          "custard apple",
+          "ber",
+          "tamarind",
+          "banana",
+          "pomegranate",
+          "papaya"
+        ]
+      },
+      "weather_related_pests_listed": "Pests and disease outbreak: occasional (specific pest list not stated in the profile section)",
+      "notes": "Net irrigated area is 35.4 thousand ha versus 884 thousand ha net sown, so the district is overwhelmingly rainfed. The separate PDKV source previously used for this dataset lists cotton, sorghum, soybean, tur, green gram and black gram as major kharif crops."
+    },
+    {
+      "district": "Wardha",
+      "division": "Nagpur",
+      "status": "full_profile",
+      "source_url": "https://icar-crida.res.in/CP/Maharastra/PDKV,%20Akola/Wardha.pdf",
+      "agro_climatic_zone_narp": "Central Vidarbha Zone (MH-8)",
+      "soils": {
+        "deep_black_pct": 38.9,
+        "medium_deep_black_pct": 16.3,
+        "shallow_black_pct": 44.6
+      },
+      "rainfall_normal": {
+        "sw_monsoon_jun_sep_mm": 775.2,
+        "sw_monsoon_rainy_days": 39.9,
+        "ne_monsoon_oct_dec_mm": 69.6,
+        "winter_jan_mar_mm": 29.4,
+        "summer_apr_may_mm": 12.2,
+        "annual_mm": 886.4,
+        "annual_rainy_days": 47.3,
+        "normal_onset": "24th meteorological week (June 11-17)",
+        "normal_cessation": "40th meteorological week (Oct 1-7)"
+      },
+      "area_by_crop_2008_09": {
+        "kharif": {
+          "soybean": 201.4,
+          "cotton": 148.0,
+          "pigeonpea": 70.4
+        },
+        "rabi": {
+          "wheat": 23.2,
+          "chickpea": 32.5
+        },
+        "summer": {
+          "groundnut": 3.2
+        },
+        "season_not_stated": {
+          "sugarcane": 40.5
+        }
+      },
+      "sowing_windows": {
+        "kharif_rainfed": {
+          "cotton": "20 June - 10 July",
+          "soybean": "15 June - 15 July",
+          "pigeonpea": "15 June - 15 July"
+        },
+        "rabi_rainfed": {
+          "gram": "15 October - 15 November"
+        },
+        "rabi_irrigated": {
+          "wheat": "15 November - 15 December"
+        }
+      },
+      "horticulture": {
+        "fruits_total_area": 19.3,
+        "fruits_listed_area": {
+          "nagpur_mandarin": 14.3,
+          "sweet_orange": 3.1,
+          "kagzi_lime": 0.7,
+          "aonla": 0.4,
+          "ber": 0.4,
+          "mango": 0.2,
+          "custard_apple": 0.1,
+          "banana": 0.1
+        },
+        "vegetables_listed_area": {
+          "brinjal": 1.3,
+          "tomato": 1.1,
+          "cole_crops": 0.7,
+          "onion": 0.4,
+          "leafy_vegetables": 0.2
+        },
+        "spices_listed_area": {
+          "coriander": 1.12,
+          "turmeric": 0.2,
+          "ginger": 0.05,
+          "garlic": 0.03
+        }
+      },
+      "weather_related_pests_listed": "Cotton: jassids and thrips; Soybean: semi-looper; Greengram: powdery mildew; Pigeonpea: wilt and root rot; Citrus: citrus psylla",
+      "notes": "Net irrigated area is 31.58 thousand ha of 284 thousand ha net sown, so mostly rainfed."
+    },
+    {
+      "district": "Nagpur",
+      "division": "Nagpur",
+      "status": "full_profile",
+      "source_url": "https://icar-crida.res.in/CP/Maharastra/PDKV,%20Akola/Nagpur.pdf",
+      "agro_climatic_zone_narp": "Eastern Vidarbha zone (MH-9) & part of Central Vidarbha zone (MH-8)",
+      "soils": {
+        "deep_black_pct": 43.4,
+        "medium_deep_black_pct": 13.8,
+        "shallow_black_pct": 42.7
+      },
+      "rainfall_normal": {
+        "sw_monsoon_jun_sep_mm": 936.1,
+        "sw_monsoon_rainy_days": 44.9,
+        "ne_monsoon_oct_dec_mm": 76.3,
+        "winter_jan_mar_mm": 49.8,
+        "summer_apr_may_mm": 19.9,
+        "annual_mm": 1082.1,
+        "annual_rainy_days": 54.5,
+        "normal_onset": "24th MW (June 11-17)",
+        "normal_cessation": "40th MW (01-07 October)"
+      },
+      "area_by_crop_2008_09": {
+        "kharif": {
+          "soybean": 305.5,
+          "cotton": 74.8,
+          "paddy": 58.1,
+          "pigeonpea": 57.1,
+          "jowar": 17.2,
+          "groundnut": 5.7,
+          "moong": 1.2,
+          "urd": 1.2,
+          "sesamum": 0.09,
+          "sugarcane": 0.14
+        },
+        "rabi": {
+          "wheat": 4.1,
+          "gram": 4.4,
+          "linseed": 0.4,
+          "rabi_jowar": 2.3,
+          "other_pulses": 1.8,
+          "other_oilseeds": 0.4
+        },
+        "summer": {
+          "groundnut": 0.2,
+          "moong": 0.3
+        }
+      },
+      "sowing_windows": {
+        "kharif_rainfed": {
+          "cotton": "20 June - 10 July",
+          "soybean": "20 June - 15 July",
+          "paddy": "20 June - 10 July",
+          "pigeonpea": "20 June - 15 July",
+          "kharif_jowar": "20 June - 10 July"
+        },
+        "rabi_rainfed": {
+          "soybean": "1st October - 15 October"
+        },
+        "rabi_irrigated": {
+          "wheat": "1st November - 15 November",
+          "chickpea": "15 October - 1 November"
+        }
+      },
+      "horticulture": {
+        "fruits_total_area": 38.57,
+        "fruits_listed_area": {
+          "nagpur_mandarin": 25.33,
+          "acid_lime": 3.81,
+          "mango": 9.43
+        },
+        "vegetables_total_area": 10.35,
+        "vegetables_listed_area": {
+          "brinjal": 6.5,
+          "tomato": 0.95,
+          "cauliflower": 2.0,
+          "cabbage": 0.5,
+          "onion": 0.4
+        }
+      },
+      "weather_related_pests_listed": "Pests and disease outbreak: regular; specific pest list not stated in the profile section",
+      "notes": "Net irrigated area is 134 thousand ha and net sown area is 499 thousand ha."
+    },
+    {
+      "district": "Gondia",
+      "division": "Nagpur",
+      "status": "full_profile",
+      "source_url": "https://icar-crida.res.in/CP/Maharastra/PDKV,%20Akola/Gondia.pdf",
+      "agro_climatic_zone_narp": "Eastern Vidarbha zone (MH-9)",
+      "soils": {
+        "deep_black_pct": 78.9,
+        "medium_deep_black_pct": 7.9,
+        "shallow_black_pct": 13.1
+      },
+      "rainfall_normal": {
+        "sw_monsoon_jun_sep_mm": 1237.1,
+        "sw_monsoon_rainy_days": 51,
+        "ne_monsoon_oct_dec_mm": 79.3,
+        "winter_jan_feb_mm": 44.7,
+        "summer_mar_may_mm": 16.8,
+        "annual_mm": 1377.9,
+        "annual_rainy_days": 60,
+        "normal_onset": "11th-20th June",
+        "normal_cessation": "1st-10th October"
+      },
+      "area_by_crop_2008_09": {
+        "kharif": {
+          "paddy": 190.3,
+          "pigeonpea": 5.1,
+          "sesame": 0.9
+        },
+        "rabi": {
+          "wheat": 2.3,
+          "gram": 6.1,
+          "linseed": 10.7
+        },
+        "summer": {
+          "paddy": 15.0
+        }
+      },
+      "sowing_windows": {
+        "kharif_rainfed": {
+          "paddy": "July",
+          "pigeonpea": "1st - 4th June"
+        },
+        "kharif_irrigated": {
+          "paddy": "4th June - 2nd July"
+        },
+        "rabi_rainfed": {
+          "gram": "15 November - 15 December"
+        },
+        "rabi_irrigated": {
+          "wheat": "15 November - 15 December",
+          "gram": "15 November - 15 December"
+        },
+        "summer": {
+          "paddy": "2nd January - 2nd February"
+        }
+      },
+      "horticulture": {
+        "fruits_total_area": 0.3,
+        "fruits_listed_area": {
+          "mango": 0.1,
+          "banana": 0.2
+        },
+        "vegetables_total_area": 4.5,
+        "vegetables_listed_area": {
+          "chilly": 1.0,
+          "brinjal": 2.2,
+          "peas": 1.1,
+          "tomato": 0.2
+        }
+      },
+      "weather_related_pests_listed": "Paddy: leaf blast and stem borer; pest and disease outbreak: occasional",
+      "notes": "Net irrigated area is 98.6 thousand ha; the profile also reports 105.7 thousand ha as total irrigated area in its irrigation table."
+    },
+    {
+      "district": "Chandrapur",
+      "division": "Nagpur",
+      "status": "full_profile",
+      "source_url": "https://icar-crida.res.in/CP/Maharastra/PDKV,%20Akola/Chandrapur.pdf",
+      "agro_climatic_zone_narp": "Central Vidarbha Zone (MH-8)",
+      "soils": {
+        "deep_black_pct": 56.6,
+        "medium_deep_black_pct": 10.5,
+        "shallow_black_pct": 25.5
+      },
+      "rainfall_normal": {
+        "sw_monsoon_jun_sep_mm": 1163.0,
+        "sw_monsoon_rainy_days": 54,
+        "ne_monsoon_oct_dec_mm": 75.0,
+        "winter_jan_feb_mm": 52.0,
+        "summer_mar_may_mm": 47.0,
+        "annual_mm": 1337.0,
+        "annual_rainy_days": 66,
+        "normal_onset": "2nd week of June",
+        "normal_cessation": "1st week of October"
+      },
+      "area_by_crop_2008_09": {
+        "kharif": {
+          "oilseeds_total": 138.6,
+          "cereals_total": 108.8,
+          "cotton": 42.4,
+          "pulses_total": 35.9
+        },
+        "rabi": {
+          "oilseeds_total": 15.2,
+          "cereals_total": 44.3,
+          "pulses_total": 4.5
+        },
+        "summer": {
+          "oilseeds_total": 0.3,
+          "cereals_total": 0.2
+        }
+      },
+      "sowing_windows": {
+        "kharif_rainfed": {
+          "paddy": "18 June - 29 July",
+          "cotton": "18 June - 1 July",
+          "pigeonpea": "18 June - 1 July",
+          "soybean": "18 June - 1 July",
+          "sunflower": "18 June - 24 June"
+        },
+        "rabi_rainfed_irrigated": {
+          "rabi_sorghum": "27 - 30 September",
+          "gram": "01 October - 4 November",
+          "wheat": "5 November - 2 December"
+        }
+      },
+      "horticulture": {
+        "fruits_total_area": null,
+        "mango_area": 1.0,
+        "vegetables_total_area": 9.9,
+        "vegetables_listed_area": {
+          "chilli": 6.0,
+          "turmeric": 0.5,
+          "brinjal": 1.4,
+          "tomato": 0.3,
+          "onion": 0.3,
+          "cauliflower": 0.2,
+          "cabbage": 0.03,
+          "radish": 0.1,
+          "other_vegetables": 1.1
+        }
+      },
+      "weather_related_pests_listed": "Paddy: armyworm; Soybean: Spodoptera litura; pest and disease outbreak: regular; drought and heat wave: regular",
+      "notes": "Net irrigated area is 107 thousand ha of 451.5 thousand ha net sown. The source also notes a fluoride problem in groundwater."
+    },
+    {
+      "district": "Gadchiroli",
+      "division": "Nagpur",
+      "status": "full_profile",
+      "source_url": "https://icar-crida.res.in/CP/Maharastra/PDKV,%20Akola/Gadchiroli.pdf",
+      "agro_climatic_zone_narp": "Eastern Vidarbha zone (MH-9)",
+      "soils": {
+        "deep_black_pct": 72.3,
+        "medium_deep_black_pct": 20.2,
+        "shallow_black_pct": 7.4
+      },
+      "rainfall_normal": {
+        "sw_monsoon_jun_sep_mm": 1297.5,
+        "sw_monsoon_rainy_days": 52.9,
+        "ne_monsoon_oct_dec_mm": 73.9,
+        "winter_jan_mar_mm": 34.9,
+        "summer_apr_may_mm": 22.2,
+        "annual_mm": 1428.5,
+        "annual_rainy_days": 61.1,
+        "normal_onset": "24th Met. Week (June 11-17)",
+        "normal_cessation": "40th MW (01-07 Oct)"
+      },
+      "area_by_crop_2008_09": {
+        "kharif": {
+          "paddy": 149.6,
+          "pigeonpea": 6.2,
+          "soybean": 5.8,
+          "maize": 2.3,
+          "sorghum": 0.5
+        },
+        "rabi": {
+          "wheat": 1.6,
+          "gram": 3.8,
+          "rabi_sorghum": 9.5,
+          "linseed": 3.9
+        },
+        "summer": null
+      },
+      "sowing_windows": {
+        "kharif_rainfed": {
+          "paddy": "18 June - 29 July",
+          "cotton": "18 June - 1 July",
+          "pigeonpea": "18 June - 1 July",
+          "soybean": "18 June - 1 July",
+          "sunflower": "18 June - 24 June"
+        },
+        "rabi_rainfed": {
+          "rabi_sorghum": "27th - 30th September",
+          "gram": "1st October - 4th November",
+          "wheat": "5th November - 2nd December"
+        }
+      },
+      "horticulture": {
+        "fruits_total_area": 2.6,
+        "fruits_listed_area": {
+          "mango": 2.6,
+          "cashew_nut": 0.4,
+          "sapota": 0.08
+        },
+        "vegetables_total_area": 3.25,
+        "vegetables_listed_area": {
+          "chili": 2.1,
+          "turmeric": 0.05,
+          "onion": 0.1,
+          "brinjal": 0.5,
+          "tomato": 0.1,
+          "other_vegetables": 0.3
+        }
+      },
+      "weather_related_pests_listed": "Paddy: armyworm; Soybean: Spodoptera; pest and disease outbreak: listed",
+      "notes": "Net irrigated area is 56.3 thousand ha; the source's irrigation table also reports 69.3 thousand ha as total irrigated area."
+    },
+    {
+      "district": "Amravati",
+      "division": "Amravati",
+      "status": "full_profile",
+      "source_url": "https://icar-crida.res.in/CP/Maharastra/PDKV,%20Akola/Amravati.pdf",
+      "agro_climatic_zone_narp": "Central Maharashtra Plateau Zone (MH-7)",
+      "soils": {
+        "deep_black_pct": 55.9,
+        "medium_deep_black_pct": 1.1,
+        "shallow_black_pct": 42.9
+      },
+      "rainfall_normal": {
+        "sw_monsoon_jun_sep_mm": 775.2,
+        "sw_monsoon_rainy_days": 40,
+        "ne_monsoon_oct_dec_mm": 69.6,
+        "winter_jan_feb_mm": 29.4,
+        "summer_mar_may_mm": 12.2,
+        "annual_mm": 886.4,
+        "annual_rainy_days": 48,
+        "normal_onset": "2nd week of June",
+        "normal_cessation": "1st week of October"
+      },
+      "area_by_crop_source_period": {
+        "period": "average of last 3 years",
+        "kharif": {
+          "soybean": 317.6,
+          "cotton": 179.4,
+          "pigeonpea": 102.1,
+          "sorghum": 49.1,
+          "greengram": 37.1
+        },
+        "rabi": {
+          "chickpea": 79.0,
+          "wheat": 45.4
+        },
+        "summer": null
+      },
+      "sowing_windows": {
+        "kharif_rainfed": {
+          "cotton": "15 June - 30 June",
+          "soybean": "15 June - 15 July",
+          "greengram_blackgram": "15 June - 30 June",
+          "pigeonpea": "15 June - 10 July",
+          "kharif_sorghum": "15 June - 10 July"
+        },
+        "kharif_irrigated": {
+          "cotton": "20 - 30 May (pre-monsoon)",
+          "soybean": "1 - 30 June"
+        },
+        "rabi_rainfed": {
+          "chickpea": "1 October - 15 October",
+          "safflower": "25 September - 7 October"
+        },
+        "rabi_irrigated": {
+          "wheat": "1 November - 15 November",
+          "chickpea": "15 October - 15 November",
+          "safflower": "1 October - 30 October"
+        }
+      },
+      "horticulture": {
+        "fruits_total_area": 93.54,
+        "fruits_listed_area": {
+          "mandarin": 80.8,
+          "mango": 5.1,
+          "mosambi": 4.2,
+          "kagzi_lime": 1.1,
+          "ber": 0.7,
+          "banana": 0.4,
+          "guava": 0.3,
+          "aonla": 0.3,
+          "pomegranate": 0.2,
+          "custard_apple": 0.2,
+          "sapota": 0.14,
+          "tamarind": 0.01,
+          "papaya": 0.09
+        },
+        "vegetables_total_area": 3.79,
+        "vegetables_listed_area": {
+          "tomato": 0.38,
+          "brinjal": 0.46,
+          "cabbage": 0.21,
+          "cauliflower": 0.22,
+          "cluster_bean": 0.13,
+          "dolichos_bean": 0.1,
+          "ladyfinger": 0.19,
+          "spinach": 0.16,
+          "fenugreek": 0.05,
+          "ridge_gourd": 0.03,
+          "cucumber": 0.05,
+          "bitter_gourd": 0.05,
+          "onion": 1.67,
+          "other": 0.08
+        }
+      },
+      "weather_related_pests_listed": "Soybean: Spodoptera litura, semilooper, Helicoverpa, girdle beetle, soybean mosaic virus; Cotton: jassids, mealybug, BLB, red leaf disorder; Pigeonpea: pod borer complex, sterility mosaic disease, wilt; Citrus: Phytophthora/gummosis, CTV, FSM; Chickpea: wilt, gram caterpillar, Helicoverpa armigera; Safflower: aphid",
+      "notes": "Net irrigated area is 51.3 thousand ha versus 602 thousand ha net sown, so most cropped area is rainfed. Source identifies Morshi, Warud and Daryapur as over-exploited groundwater areas."
+    },
+    {
+      "district": "Akola",
+      "division": "Amravati",
+      "status": "full_profile",
+      "source_url": "https://icar-crida.res.in/CP/Maharastra/PDKV,%20Akola/Akola.pdf",
+      "agro_climatic_zone_narp": "Central Maharashtra Plateau Zone (MH-7)",
+      "soils": {
+        "deep_black_pct": 46.5,
+        "medium_deep_black_pct": 9.9,
+        "shallow_black_pct": 43.5
+      },
+      "rainfall_normal": {
+        "sw_monsoon_jun_sep_mm": 711.6,
+        "sw_monsoon_rainy_days": 37,
+        "ne_monsoon_oct_dec_mm": 72.6,
+        "winter_jan_feb_mm": 26.1,
+        "summer_mar_may_mm": 15.0,
+        "annual_mm": 825.3,
+        "annual_rainy_days": 45,
+        "normal_onset": "24th MW (June 11-17)",
+        "normal_cessation": "40th MW (01-07 Oct)"
+      },
+      "area_by_crop_2008_09": {
+        "kharif": {
+          "cotton": 168.3,
+          "soybean": 137.5,
+          "jowar": 46.5,
+          "greengram": 44.4,
+          "blackgram": 10.0,
+          "pigeonpea": 49.7
+        },
+        "rabi": {
+          "gram": 59.0,
+          "wheat": 34.4,
+          "safflower": 2.5
+        },
+        "summer": null
+      },
+      "sowing_windows": {
+        "kharif_rainfed": {
+          "cotton": "15 June - 30 June",
+          "soybean": "15 June - 15 July",
+          "greengram_blackgram": "15 June - 30 June",
+          "pigeonpea": "15 June - 10 July",
+          "kharif_sorghum": "15 June - 10 July"
+        },
+        "kharif_irrigated": {
+          "cotton": "20 May - 30 May (pre-monsoon)",
+          "soybean": "1 - 30 June"
+        },
+        "rabi_rainfed": {
+          "wheat": "1 - 15 October",
+          "chickpea": "1 - 15 October",
+          "safflower": "25 September - 7 October"
+        },
+        "rabi_irrigated": {
+          "wheat": "1 - 15 November",
+          "chickpea": "15 October - 15 November",
+          "safflower": "1 - 30 October"
+        }
+      },
+      "horticulture": {
+        "fruits_total_area": null,
+        "mango_area": 184,
+        "fruits_listed_area_source_unit_ha": {
+          "mango": 184,
+          "sapota": 60,
+          "mandarin": 4374,
+          "sweet_orange": 600
+        },
+        "vegetables_total_area": null,
+        "vegetables_listed_area_source_unit_ha": {
+          "tomato": 348,
+          "brinjal": 697,
+          "cabbage": 171,
+          "cauliflower": 237,
+          "cluster_bean": 225,
+          "ladyfinger": 392,
+          "spinach": 61,
+          "fenugreek": 283,
+          "ridge_gourd": 5,
+          "cucumber": 21,
+          "bitter_gourd": 14
+        },
+        "medicinal_listed_area_source_unit_ha": {
+          "safed_musli": 10000
+        }
+      },
+      "weather_related_pests_listed": "Soybean: Spodoptera litura, semilooper, soybean mosaic virus; Cotton: mealybug/sucking pests; Pigeonpea: pod borer complex, SMD; Citrus: Phytophthora/gummosis, CTV, FSM",
+      "notes": "Net irrigated area is 24.51 thousand ha versus 434.9 thousand ha net sown, so the district is predominantly rainfed. Horticulture values in the source profile are explicitly reported in hectares, not thousand hectares."
+    },
+    {
+      "district": "Buldhana",
+      "division": "Amravati",
+      "status": "full_profile",
+      "source_url": "https://www.icar-crida.res.in/cp-2012/statewiseplans/Maharastra(Pdf)/PDKV,%20Akola/Buldhana.pdf",
+      "agro_climatic_zone_narp": "Central Maharashtra Plateau Zone (MH-7)",
+      "soils": {
+        "deep_black_pct": 35.4,
+        "medium_deep_black_pct": 8.3,
+        "shallow_black_pct": 56.3
+      },
+      "rainfall_normal": {
+        "sw_monsoon_jun_sep_mm": 684.7,
+        "sw_monsoon_rainy_days": 37.0,
+        "ne_monsoon_oct_dec_mm": 76.8,
+        "winter_jan_feb_mm": 17.0,
+        "summer_mar_may_mm": 14.0,
+        "annual_mm": 792.5,
+        "annual_rainy_days": 43.6,
+        "normal_onset": "1st week of June (24th MW)",
+        "normal_cessation": "1st week of October (40th MW)"
+      },
+      "area_by_crop_2008_09": {
+        "kharif": {
+          "cotton": 247.6,
+          "soybean": 240.0,
+          "pigeonpea": 59.6,
+          "kharif_sorghum": 49.7,
+          "greengram": 41.5,
+          "blackgram": 38.3
+        },
+        "rabi": {
+          "gram": 311.1,
+          "wheat": 287.4,
+          "safflower": 43.2
+        },
+        "summer": null
+      },
+      "sowing_windows": {
+        "kharif_rainfed": {
+          "cotton": "20 June - 15 July",
+          "soybean": "20 June - 15 July",
+          "greengram_blackgram": "last week of June",
+          "pigeonpea": "1st week of July",
+          "kharif_sorghum": "20 June - 10 July"
+        },
+        "rabi_rainfed": {
+          "gram": "2nd week of October",
+          "safflower": "3rd week of September - 1st week of October"
+        },
+        "rabi_irrigated": {
+          "wheat": "1st week of November - 15 December"
+        }
+      },
+      "horticulture": {
+        "fruits_total_area": 33.6,
+        "fruits_listed_area": {
+          "mango": 8.4,
+          "mandarin": 7.9,
+          "kagzi_lime": 5.3,
+          "mosambi": 4.3,
+          "guava": 1.9,
+          "ber": 1.7,
+          "custard_apple": 1.3,
+          "banana": 0.9,
+          "sapota": 0.8,
+          "aonla": 0.6,
+          "pomegranate": 0.2,
+          "tamarind": 0.07
+        },
+        "vegetables_total_area": 4.1,
+        "vegetables_listed_area": {
+          "onion": 0.8,
+          "tomato": 0.7,
+          "cauliflower": 0.4,
+          "ladyfinger": 0.4,
+          "brinjal": 0.4,
+          "cabbage": 0.3,
+          "fenugreek": 0.2,
+          "cluster_bean": 0.2,
+          "bitter_gourd": 0.1,
+          "spinach": 0.1,
+          "potato": 0.1,
+          "cucumber": 0.07,
+          "dolichous_bean": 0.03,
+          "ridge_gourd": 0.015,
+          "other": 0.2
+        }
+      },
+      "weather_related_pests_listed": "Pests and disease outbreak: occasional; hailstorm and heat wave: mild/occasional",
+      "notes": "Net irrigated area is 43.45 thousand ha versus 712 thousand hsa net sown, so predominantly rainfed. Source notes salinity in parts of Sangrampur and Jalgaon Jamod."
+    }
+  ]
+}
