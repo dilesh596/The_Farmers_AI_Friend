@@ -1,39 +1,33 @@
-# The Farmers AI Friend
+# Farmers AI Friend
 
-An offline AI-powered agricultural advisory app for farmers in Vidarbha, Maharashtra. It helps farmers ask crop-related questions in English, Marathi, or Hindi and get locally relevant suggestions based on district, month, and historical agronomic data.
+A multilingual, offline AI-powered agricultural assistant designed to help farmers get crop guidance in their preferred language.
 
 ## Overview
 
-The Farmers AI Friend is a Streamlit-based application that combines:
+Farmers AI Friend is a Python-based application that provides crop and seasonal farming advice using local village/district data, language-aware responses, and an offline AI model. The app is tailored for Indian farmers, especially in Vidarbha, Maharashtra, where quick and understandable agricultural advice can be critical.
 
-- local agricultural reference data from `advice.json`
-- a local Ollama language model for natural-language responses
-- offline speech recognition with `faster-whisper`
-- bilingual / multilingual support for English, Marathi, and Hindi
+The system helps farmers ask questions in English, Marathi, or Hindi and receive guidance such as:
 
-The app is designed to give simple, practical crop and gardening guidance such as:
-
-- which crops can be sown in a selected month
-- what should be done during the current season
-- timing for rice nursery and sowing activities
-- general suggestions for crop planning, pests, and seasonal farming decisions
-
-It is meant to be a helpful decision-support tool for small and marginal farmers, especially in Indian agricultural contexts where language accessibility matters.
+- which crops can be sown this month
+- what crops are suitable for the selected district
+- planting and sowing windows for major crops
+- rice nursery and sowing timing guidance
+- general seasonal farming recommendations
 
 ## Why this project matters
 
-Many farmers need timely advice but may not have access to reliable digital advisory systems in their native language. This project aims to bridge that gap by providing a farmer-friendly, local, and offline AI assistant that works without requiring internet-based cloud services.
+Many farmers need timely agricultural advice, but access to reliable digital assistance is often limited by language barriers, connectivity issues, and lack of localized recommendations. This project aims to bridge that gap by creating a simple, farmer-friendly AI tool that works locally without relying on external cloud services.
 
-## Features
+## Key Features
 
-- Farmers can ask questions in English, Marathi, or Hindi
-- Automatic language detection for Romanized Marathi/Hindi inputs
-- Local conversion to Devanagari script for Marathi and Hindi responses
-- District and month-based crop recommendations
-- Use of historical, reference-based agricultural data
-- Offline local model support with Ollama
-- Voice input support for spoken questions
-- Simple chat-style user experience via Streamlit
+- Multilingual support: English, Marathi, and Hindi
+- Local language detection for Romanized Marathi/Hindi input
+- Automatic conversion to Devanagari script for Marathi/Hindi responses
+- District-based and month-based recommendations
+- Chat-style interface powered by Streamlit
+- Offline AI support with Ollama
+- Voice input support using local speech recognition
+- Uses historical agricultural reference data to avoid fabricating uncertain advice
 
 ## Tech Stack
 
@@ -47,63 +41,80 @@ Many farmers need timely advice but may not have access to reliable digital advi
 
 ```text
 The_Farmers_AI_Friend/
-├── qbot.py
-├── advice.json
-├── README.md
-└── .gitignore (if present)
+├── qbot.py              # Main Streamlit app and logic
+├── advice.json          # Agricultural reference data by district and month
+├── README.md            # Project documentation
+└── requirements.txt     # Optional dependency file (to be added if needed)
 ```
 
 ## How it works
 
 1. The user selects a district and month.
-2. The app loads local agronomic data from `advice.json`.
-3. The user enters a question in English, Marathi, or Hindi.
-4. The app detects the language and prepares context from the selected district/month.
-5. A local Ollama model answers using the reference data and avoids guessing when information is unavailable.
-6. The response is presented in the requested language with simple farming-friendly wording.
+2. The app loads agronomic reference data from `advice.json`.
+3. The farmer asks a question in English, Marathi, or Hindi.
+4. The app detects the language and prepares context using the selected district and month.
+5. A local Ollama model answers using only the available agricultural reference data.
+6. The result is delivered in a simple, plain-language format suitable for farmers.
 
 ## Installation
 
-Make sure Python 3.10+ is installed.
+### Prerequisites
 
-Install the required packages:
+- Python 3.10+
+- Ollama installed and running locally
+- Internet access for the first-time model download (if needed)
+
+### Install dependencies
 
 ```bash
 pip install streamlit ollama faster-whisper
 ```
 
-Make sure Ollama is installed and running locally, then pull a model such as:
+### Pull a local model
 
 ```bash
 ollama pull gemma3:1b
 ```
 
-## Run the app
+## Run the application
 
 ```bash
 streamlit run qbot.py
 ```
 
-## Example questions
+## Example Questions
 
 - What crops should I grow this month?
 - Which crops can be sown in June?
 - When should I sow paddy?
 - क्या इस महीने मूंग बोनी चाहिए?
 - या महिन्यात कोणती पिके घ्यावीत?
+- aata kay perave?
 
-## Important note
+## Example Use Cases
 
-The app uses historical local agricultural data and reference-based advice. It should be used as a helpful decision-support tool, but farmers should also consult local agriculture officers, extension services, and current field conditions before making major farming decisions.
+- A farmer asks which crop is suitable for the current month.
+- A farmer wants to know the ideal time to sow a particular crop.
+- A farmer asks in Hindi or Marathi using Roman letters and receives a Devanagari response.
+- A farmer uses voice input to ask a crop question hands-free.
 
-## License
+## Important Note
 
-This project currently does not specify a license in the repository files. If you plan to publish it publicly for broader use, consider adding an appropriate open-source license.
+This app relies on historical and local agricultural reference data. It is designed as a decision-support tool, not a replacement for local agriculture officers, agronomists, or field conditions. Farmers should validate recommendations with local agricultural experts before making critical crop decisions.
 
 ## Future Improvements
 
 - add a proper `requirements.txt`
-- support more districts and crop datasets
-- add a web dashboard for crop calendars and alerts
-- improve multilingual handling and local language accuracy
-- package the app for deployment in rural environments
+- support more districts and crops
+- improve multilingual accuracy for agricultural terminology
+- add better farmer-friendly UI improvements
+- include weather and soil data integration
+- add offline dashboards for crop calendars and seasonal alerts
+
+## License
+
+This project does not currently include a license file in the repository. If you plan to share it publicly or collaborate with others, adding an open-source license is recommended.
+
+## Project Description
+
+Farmers AI Friend is an offline AI-powered farming assistant that helps farmers get crop recommendations in English, Marathi, and Hindi using district-based agricultural data, local language support, and voice-enabled interaction.
